@@ -1,0 +1,1 @@
+Each terminal of an MOS transistor has capacitance to the other terminals. In general, these capacitances are nonlinear and voltage dependent (C-V). But they can be approximated as simple capacitors when their behavior is averaged across the switching voltages of a logic gate.

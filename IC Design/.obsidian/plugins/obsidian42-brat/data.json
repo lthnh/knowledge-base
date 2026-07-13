@@ -1,0 +1,28 @@
+{
+  "pluginList": [
+    "zhaoshenzhai/obsidian-mathlinks",
+    "RyotaUshio/obsidian-latex-theorem-equation-referencer"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "zhaoshenzhai/obsidian-mathlinks",
+      "version": ""
+    },
+    {
+      "repo": "RyotaUshio/obsidian-latex-theorem-equation-referencer",
+      "version": ""
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
+}

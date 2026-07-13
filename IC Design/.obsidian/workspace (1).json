@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "eb0ee5ffb1c09a9c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f43695a15d9e870",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b4d86c49eed0216",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Advanced Digital IC Design/MOS Transistor Theory/C-V Characteristics/Detailed MOS Gate Capacitance Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Detailed MOS Gate Capacitance Model"
+            }
+          },
+          {
+            "id": "e19530a81b66ea47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Advanced Circuit Analysis/Notes/MOSFETs/Device Structure.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Device Structure"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab629cdad62e1f9d",
+    "type": "split",
+    "children": [
+      {
+        "id": "da93b29c01c4bacd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50ee3d24dfecc4af",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f03abb9352c0d0c0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "505453258e9728f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "80cdee4dfea11c88",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f111551c3342adc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1824349b2517cb05",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "1b154dae6ef7f82a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "66c57138851f1499",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "40ea7dd4584ef0bc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0ab898cc4d480f48",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "e19530a81b66ea47",
+  "lastOpenFiles": [
+    "Advanced Circuit Analysis/Notes/MOSFETs/Device Operation.md",
+    "Advanced Circuit Analysis/Notes/MOSFETs/DC Analysis.md",
+    "Advanced Circuit Analysis/Notes/MOSFETs/Characteristics of p-type MOSFET.md",
+    "Advanced Circuit Analysis/Notes/MOSFETs/Device Structure.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/C-V Characteristics/Detailed MOS Diffusion Capacitance Model.md",
+    "Untitled.canvas",
+    "Advanced Digital IC Design/MOS Transistor Theory/C-V Characteristics/Detailed MOS Gate Capacitance Model.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/C-V Characteristics/Simple MOS Capacitance Models.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/Velocity Saturation and Mobility Degradation.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/Delay/Transient Response.md",
+    "Verilog",
+    "Verilog/Number and Logic Background for Verilog.md",
+    "Advanced Circuit Analysis/Notes/BJTs/Operation in Active Mode.md",
+    "Advanced Circuit Analysis/Notes/BJTs/Modes of Operation.md",
+    "Advanced Digital IC Design/Images/data-dependent-gate-capacitance.png",
+    "Advanced Digital IC Design/Images/overlap-gate-capacitance.png",
+    "Advanced Digital IC Design/Images/approx-intrinsic-gate-capacitance.png",
+    "Transient Response.md",
+    "Advanced Computer Architecture/Class Notes/15.03.2026.md",
+    "Advanced Computer Architecture/Images",
+    "Advanced Computer Architecture/Images/example-neg-num-to-dec.png",
+    "Advanced Digital IC Design/MOS Transistor Theory/Delay/Introduction to Delay.md",
+    "Advanced Digital IC Design/Images/example-arrival-times.png",
+    "Advanced Digital IC Design/MOS Transistor Theory/Delay/desktop.ini",
+    "Advanced Circuit Analysis/Notes/BJTs/desktop.ini",
+    "Advanced Analog IC Design/Class Notes/desktop.ini",
+    "Advanced Analog IC Design/desktop.ini",
+    "Advanced Computer Architecture/Class Notes/desktop.ini",
+    "Advanced Digital IC Design/MOS Transistor Theory/desktop.ini",
+    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/desktop.ini",
+    "Advanced Circuit Analysis/Notes/Semiconductors Theory/desktop.ini",
+    "Advanced Circuit Analysis/Notes/BJTs/Device Structure.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/DC Characteristics/Pass Transistor DC Characteristics.md",
+    "Advanced Digital IC Design/Images/pass-transistor-threshold-drop-3.png",
+    "Advanced Digital IC Design/Images/pass-transistor-threshold-drop-4.png",
+    "Advanced Digital IC Design/MOS Transistor Theory/DC Characteristics/Noise Margin.md",
+    "Advanced Digital IC Design/Images/pass-transistor-threshold-drop-1.png",
+    "Advanced Digital IC Design/Images/pass-transistor-threshold-drop-2.png",
+    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/Body Effect.md",
+    "Advanced Digital IC Design/Images/cmos-inverter-noise-margins.png",
+    "Advanced Digital IC Design/Class Notes/09.03.2026.md",
+    "Advanced Computer Architecture/Class Notes/08.03.2026.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/DC Characteristics/Beta Ratio Effects.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/DC Characteristics/Static CMOS Inverter DC Characteristics.md",
+    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/Nonideal I-V Effects.md",
+    "Advanced Analog IC Design/Class Notes/04.03.2026.md",
+    "Advanced Digital IC Design/Class Notes/02.03.2026.md"
+  ]
+}
