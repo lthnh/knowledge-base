@@ -1,27 +1,4 @@
-## Positional Number Systems
-
-## Negative Number Representation in Binary
-The most common one is two's complement. We will complement each bit then add one. For n-bit number, this is also equivalent to take that number and subtract it from $2^n$.
-$\rightarrow$ The most significant bit is still sign bit (0 = positive, 1 = negative).
-$\rightarrow$ All the negative numbers are shifted up by 1 so the double 0 gap from signed magnitude representation and one's complement is eliminated.
-
-The range of two's complement number is
-
-$$
--2^{n-1}\leq N \leq 2^{n-1}-1
-$$
-
-For positive number, we convert to decimal like normal.
-For negative number, we must first complement the number then add 1 to it.
-
-![[example-neg-num-to-dec.png|500]]
-
-When doing arithmetic with two's complement. We should beware of *overflow*.
-This can occurs when
-- The sum of like signs results in an answer with opposite sign.
-- The subtraction of a positive number from a negative number results in a positive number.
-- The subtraction of a negative number from a positive number results in a negative number.
-## Combinational Logic Design
+## Combinatoric Logic Design
 ### Boolean Algebra
 There are two valid states (true or false) and three core operations (conjunction $\wedge$ equivalent to AND, disjunction $\vee$ equivalent to OR, and negation $\neg$ equivalent to NOT).
 We also use +, $\cdot$, ' instead of the symbol above.
@@ -38,6 +15,10 @@ Duality states that an algebraic equality will remain true if all 0's and 1's ar
 $\Rightarrow$ This is why Boolean algebra theorems are almost always given in pairs.
 
 When using duality, we should take note of the order of precedence follows original function. For example, with expression $F=A\cdot B+C$. Then the dual of this expression is $F_D=(A+B)\cdot C$.
+
+We can convert between positive logic and negative logic using duality. The precedence must follow the original precedence of the function.
+
+Formal definition: An algebraic equality will remain true if all 0's and 1's are interchanged, and all AND and OR operations are interchanged. Taking the dual of a positive logic function will produce the equivalent function using negative logic if the original order of precedence is preserved.
 
 **Identity**
 An identity operation is one that when performed will yield itself regardless of variable's value.
@@ -120,6 +101,8 @@ $$
 
 We can take advantage of this theorem to turn a *sum of products (SOP)* into one that uses only NAND gates. We can also turn a *product of sums (POS)* into one that uses only NOR gates.
 
+Any sum of products that is implemented with only AND/OR gates can be replaced by a NAND-only equivalent circuit.
+Any product of sums that is implemented with only AND/OR gates can be replaced by a NOR-only equivalent circuit.
 #### Functionally Complete Operation Sets
 A set of Boolean operators is said to be *functionally complete* when the set can implement all possible logic functions.
 The set of operators {AND, OR, NOT} is functionally complete because every other operation can be implemented using these three operators.
@@ -128,7 +111,7 @@ De Morgan's theorem shows that AND and OR can be replaced by NAND and NOR.
 >[!important]
 >NAND and NOR by themselves are functionally complete since they can also implement NOT function.
 
-## Combinational Logic Synthesis
+## Combinatoric Logic Synthesis
 ### Canonical Sum of Products
 Based on minterms. A minterm must include all literals and will produce a 1 when the input is matched.
 This form is often unminimized, and is a starting point for minimization using Boolean algebra.
@@ -137,6 +120,13 @@ Based on maxterms. A maxterm must include all literals and will produce a 0 when
 This approach is complementary to the sum of products approach. It will produce 0 for each maxterm but 1 for others.
 This form is often unminimized, and is a starting point for minimization using Boolean algebra.
 ## Logic Minimization
+We can do this with Karnaugh maps to find either sum of products or product of sums.
+### Timing hazards and Glitches
+There are two types:
+- Static hazard
+	- Static 0 timing hazard is when input switches between two input codes that both yield an output of 0 but momentarily switches to 1.
+	- Static 1 timing hazard is when input switches between two input codes that both yield an output of 1 but momentarily switches to 0.
+- Dynamic hazard: when input switches between two input codes that results output transition but momentarily glitches before reaching its final value.
+Can add additional circuitry to avoid these timing problems. One example of this would be adding non-prime essential prime implicant (i.e. use complete sum instead of minimal sum).[^1]
 
-
-[^1]: It is noteworthy that in pure logic algebra book. AND and OR have the same precedence. But in digital IC design people seem to have chosen that AND has higher precedence than OR.
+[^1]: A complete sum is an expression that includes every possible prime implicants.
