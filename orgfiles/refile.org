@@ -1,0 +1,130 @@
+* TODO QUESTION: What is the difference between TI linker script and GCC linker script?
+  DEADLINE: <2026-07-31 Fri>
+  - Note taken on [2026-07-24 Fri 10:21] \\
+    ---
+    id: Linker Command File
+    aliases: []
+    tags: []
+    ---
+    
+    > [!warning] This is specifically for TI linker script, not apply to GCC linker.
+    
+    ## Basics
+    Linker command file can contain anything that may appear in a command line: options, object file names, library names. Global symbols can also be created.
+    ### MEMORY Directive
+    Its purpose is to assign names to a range of memory. These name can be used in the `SECTIONS` directive.
+    Below  is an example from TI.
+    ```ld
+    MEMORY
+    {
+        SFR                     : origin = 0x0000, length = 0x0010
+        PERIPHERALS_8BIT        : origin = 0x0010, length = 0x00F0
+        PERIPHERALS_16BIT       : origin = 0x0100, length = 0x0100
+        RAM                     : origin = 0x1C00, length = 0x0FFE
+        INFOA                   : origin = 0x1980, length = 0x0080
+        INFOB                   : origin = 0x1900, length = 0x0080
+        INFOC                   : origin = 0x1880, length = 0x0080
+        INFOD                   : origin = 0x1800, length = 0x0080
+        FLASH                   : origin = 0x8000, length = 0x7F80
+        INT00                   : origin = 0xFF80, length = 0x0002
+        /* ... and so on */
+    }
+    ```
+    You specify a memory region by stating the origin and the length of that memory region.
+    ### SECTIONS Directive
+    This section does two things at once:
+    - Forms output sections from input sections
+    - Allocates those output sections to memory
+    
+    ![[linker_primer_sections_directive.PNG]]
+    
+    #### Glossary
+    - Object file: a file contains mostly machine code (i.e 0 and 1) and has info that allows a linker to know which symbol it requires to work.
+    - Symbol: names of variables, functions, etc.
+    - Input section: one section from one object file. One section can be initialized or uninitialized. It can be either code or data. 
+    - Output section: a collection of more than one input sections, formed according to the SECTIONS directive.
+    #### Section Naming Convention
+    Section name doesn't tell you everything. But input sections with these names usually have these contents.
+    
+    | Name | Initialized | Notes |
+    | ---- | ----------- | ----- |
+    | .text | yes | executable code |
+    | .bss | no | global variables |
+    | .cinit | yes | tables which initialize global variables |
+    | .data (EABI) | yes and no | initialized coming out of the assembler; changed to unitialized by the linker |
+    | .data (COFF EABI) | yes | initialized data |
+    | .stack | no | system stack |
+    | .heap or .sysmem | no | malloc heap |
+    | .const | yes | initialized global variables |
+    | .switch | yes | jump tables for certain switch elements |
+    | .init_array or .pinit | yes | table of C++ constructors called at startup |
+    | .cio | no | buffer for stdio functions |
+    
+    Sections often begin with '.' but it is not required. The names may have some variations but they have the same meaning.
+    The SECTIONS directive has similar syntax as MEMORY directive.
+    ```ld
+    SECTIONS
+    {
+        /* All sections appear here. */
+    }
+    ```
+    #### Output Sections
+    Shortcut is one of the most confusing aspects in SECTIONS directive code. Below is an example without shortcuts.
+    ```ld
+        output_section_name         /* Name the output section        */
+        {
+           file1.obj(.text)         /* List the input sections        */
+           file2.obj(.text)
+           file3.obj(.text)
+        } > FLASH                   /* Allocate to FLASH memory range */
+    ```
+    Here is a possible shortcut:
+    ```ld
+        output_section_name         /* Name the output section           */
+        {
+            /* Shortcut syntax for all input sections named .text        */
+            *(.text)
+        } > FLASH                   /* Allocate to FLASH memory range    */
+    ```
+    If these sections are included together, this second section will include any .text sections aside from the .obj files above. But even this is not short enough. This example will continue from the example above.
+    ```ld
+        .text > FLASH
+    ```
+    This example has only one difference: now the output_section_name has been changed to .text. The output section name and the input section names are all the same: .text.
+    
+    > [!info] We should not overlook the distinction between input sections and output section which contains them.
+    
+    Here is another example:
+    ```ld
+        .text : {} > FLASH
+    ```
+    This example is no difference from the one above but included because that syntax pattern is common in many linker command files.
+    You can mix all of these shortcuts together.
+    ```ld
+        output_section_name
+        {
+            first.obj(.text)        /* This code must be first */
+            *(.text)
+        } > FLASH
+    
+    ```
+    This syntax `> FLASH` allocates the output section to FLASH memory.
+    You may also see hard-coded address `> 0x20000000`.
+    Allocations to hard-coded address are always done before allocations to a named memory range. Your linker command file may takes advantage of this.
+    You should watch for macro expansion like this as this is actually an allocation to a hard-coded address:
+    ```ld
+    #define BASE 0x20000000
+    
+    /* many lines later */
+    
+        ... > BASE
+    ```
+    ## Sources
+    1. https://software-dl.ti.com/ccs/esd/documents/sdto_cgt_Linker-Command-File-Primer.html
+    2. https://stackoverflow.com/questions/7718299/whats-an-object-file-in-c
+    
+* TODO Finish CV for Ban Vien, Realtek and Faraday.
+  DEADLINE: <2026-07-24 Fri>
+* TODO Finish research to unlock C2000 series CPU.
+  DEADLINE: <2026-07-24 Fri>
+  [2026-07-23 Thu]
