@@ -36,3 +36,4 @@ Sources:
 [^1]: This means turn the device off, wait for a short time then turn it back on.
 
 [^2]: Code Composer Studio, a TI IDE.
+

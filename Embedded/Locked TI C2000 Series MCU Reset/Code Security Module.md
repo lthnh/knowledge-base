@@ -1,3 +1,8 @@
+---
+id: Code Security Module
+aliases: []
+tags: []
+---
 The security features a 128-bit password which the user programs into the flash.
 
 One CSM is used to protect the flash/OTP and the L0/L1 SRAM blocks. This prevents unauthorized user from examining the memory contents through the JTAG port or trying to **boot-load** some undesired firmware that would export the secure memory contents. To enable access to the secure blocks, the user must write the correct 128-bit KEY value that matches the value stored in the password locations within the flash.

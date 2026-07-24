@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Locked TI C2000 Series MCU Reset/Recover from CSM lock.md",
+                "file": "Locked TI C2000 Series MCU Reset/Bootloader/Linker Command File.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Recover from CSM lock"
+              "title": "Linker Command File"
             }
           },
           {
@@ -215,9 +215,11 @@
   },
   "active": "b9fe33da497ebdc2",
   "lastOpenFiles": [
-    "Locked TI C2000 Series MCU Reset/Code Security Module.md",
-    "Locked TI C2000 Series MCU Reset/Boot loader 101.md",
     "Locked TI C2000 Series MCU Reset/Recover from CSM lock.md",
+    "Locked TI C2000 Series MCU Reset/Bootloader/Linker Command File.md",
+    "Locked TI C2000 Series MCU Reset/Images/linker_primer_sections_directive.PNG",
+    "Locked TI C2000 Series MCU Reset/Boot loader 101.md",
+    "Locked TI C2000 Series MCU Reset/Code Security Module.md",
     "Untitled.base",
     "Untitled.md",
     "Welcome.md",
