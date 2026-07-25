@@ -232,6 +232,109 @@ In practice, there is no reference from the NOLOAD section to anything outside. 
 
 More info on special sections like `NOLOAD`, refer to [[Linker Command File#source]] 3.
 ### Load at One Address, Run from a Different Address
+
+```ld
+ .TI.ramfuncs : LOAD = FLASHD,
+                RUN = RAML0,
+                LOAD_START(_RamfuncsLoadStart),
+                LOAD_END(_RamfuncsLoadEnd),
+                RUN_START(_RamfuncsRunStart)
+```
+
+This create an output section named .TI.ramfuncs that is composed of all input sections with the same name. It has two allocations: FLASHD for loading and RAML0 for running. This requires the application copies .TI.ramfuncs from FLASHD to RAML0 during system execution. This step is not automatic and must be explicitly implemented in the application code.
+
+The LOAD_START, LOAD_END and RUN_START establish symbols that are used to implement the copy. The value of symbol _RamfuncsLoadStart is the starting load address, _RamfuncsLoadEnd is the ending load address, and _RamfuncsRunStart has the starting run address.
+### Allocate a Single Input Section from a Library
+
+```ld
+IQmathTables3 : > IQTABLES3
+{
+   IQmath.lib<IQNasinTable.obj> (IQmathTablesRam)
+}
+```
+
+This forms an output section named IQmathTables3 with one input section named IQmathTablesRam. This input section comes from an object file named IQNasinTable.obj,which is a member of IQmath.lib library. The output section is allocated to IQTABLES3 memory range.
+
+Below is a variant to include all sections from a library.
+
+```ld
+sinetext : > DDR2
+{
+     --library=Sinewave_lib.lib(.text)
+}
+```
+
+This forms an output section named sintext containing all the .text input sections from Sineware_lib.lib. This section is allocated to DDR2 memory range. Note that the linker does not bring in the files from the library but only files that are actually needed to satisfy open references from other object modules.
+
+The `--library=` syntax has the same effects as `<>` in the previous examples.
+### Allocate an Input Section from a Library to Different Load and Run Addresses.
+
+```ld
+ipcConst
+{
+   driverlib.lib<ipc.obj>(.const)
+} LOAD = FLASH5, RUN = RAMLS0,
+LOAD_START(constLoadStart),
+LOAD_SIZE(constLoadSize),
+RUN_START(constRunStart), ALIGN(8)
+```
+
+This combines techniques from [[Linker Command File#load-at-one-address-run-from-a-different-address]] and [[Linker Command File#allocate-a-single-input-section-from-a-library]].
+For more info on the LOAD_START, LOAD_SIZE and RUN_START operators see *Address and Dimension Operators* in **Assembly Language Tools** manual for your CPU family. ALIGN(8) means the run address is aligned to a multiple of 8. For details see *Specifying Load and Run Addresses* in **Assembly Language Tools**.
+### Group Output Sections Together
+Suppose you need some output sections to be next to each other in order. You might write
+
+```ld
+/* This does NOT work */
+output_section_1 > RAM
+output_section_2 > RAM
+output_section_3 > RAM
+```
+
+The linker places all of those output sections in memory range but in any order. There maybe some other section put in between them. You should use GROUP directive to allocate output sections together in certain order like
+
+```ld
+GROUP : > CTOMRAM
+{
+    PUTBUFFER
+    PUTWRITEIDX
+    GETREADIDX
+}
+```
+
+The output sections are PUTBUFFER, PUTWRITEIDX, and GETREADIDX. They are allocated to the memory range CTOMRAM as a group, in that exact order. Note how the individual output sections do not have any memory allocation specification.
+
+>[!info] The output section names are in capital. This is unwritten convention in linker command files that only memory range names like CTOMRAM are written in all capital letters.
+
+>[!info] TI linker command files may violate this convention.
+
+### Memory Attributes
+The MEMORY directive might have lines like these
+
+```ld
+MEMORY
+{
+    ...
+    FLASH1 (RX) : origin = 0x00204000, length = 0x1C000
+    FLASH2 (RX) : origin = 0x00260000, length = 0x1FFD0
+    CSM_RSVD_Z2 : origin = 0x0027FFD0, length = 0x000C
+    CSM_ECSL_Z2 : origin = 0x0027FFDC, length = 0x0024
+    C0 (RWX)    : origin = 0x20000000, length = 0x2000
+    ...
+}
+```
+
+Note `(RX)` and `(RWX)`. That syntax specifies *memory attributes* with each letter representing one attribute.
+- R: Can be read
+- W: Can be written
+- X: Can contain executable code
+- I: Can be initialized
+
+>[!info] By default, a memory range has all four attributes.
+
+>[!info] No TI supplied linker command files use this feature.
+
+The documented purpose of these attributes is to support, in the SECTIONS directive, section allocation by memory attribute. Since no TI supplied linker command files use this feature, this syntax is used only as a way to document what kinds of sections usually go in that memory range.
 ## Sources
 1. https://software-dl.ti.com/ccs/esd/documents/sdto_cgt_Linker-Command-File-Primer.html
 2. https://stackoverflow.com/questions/7718299/whats-an-object-file-in-c
