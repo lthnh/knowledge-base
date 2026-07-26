@@ -35,7 +35,7 @@ This section does two things at once:
 - Forms output sections from input sections
 - Allocates those output sections to memory
 
-![[linker_primer_sections_directive.PNG]]
+![Sections Directive Visual](../Images/linker_primer_sections_directive.PNG)
 
 #### Glossary
 - Object file: a file contains mostly machine code (i.e 0 and 1) and has info that allows a linker to know which symbol it requires to work.
