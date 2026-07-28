@@ -1,3 +1,8 @@
+---
+id: Recover from CSM lock
+aliases: []
+tags: []
+---
 The way TI support answered makes me wonder if it actually works or if there is any caveat that I am not aware of. But here is how to recover it:
 1. Select SCI boot using boot mode pins.
 2. Power cycle the device [^1].
