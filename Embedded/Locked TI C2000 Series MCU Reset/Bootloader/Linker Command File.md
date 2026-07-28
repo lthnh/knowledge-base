@@ -205,6 +205,7 @@ MEMORY
 
 C28xx devices are descended from a long line of C2xxx devices which started in the 80s. Those early devices have separate memory buses for code and data. These buses connect to physically separate memory blocks. Thus, it was possible for a specific address on PAGE0 to have different content from the same address on PAGE1. In theory, this same separate connection of buses is possible on C28xx devices but it is almost a never used feature. You should check the TRM before proceeding.
 3.
+
 Even though nearly all C28xx devices have all the memory buses connected to all the memory. This tradition use of memory pages persists.
 
 >[!warning] Check the documentation properly before tampering.
