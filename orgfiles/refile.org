@@ -1,5 +1,5 @@
-* TODO QUESTION: What is the difference between TI linker script and GCC linker script?
-  DEADLINE: <2026-07-31 Fri>
+* DONE [#C] QUESTION: What is the difference between TI linker script and GCC linker script?
+  DEADLINE: <2026-07-31 Fri> CLOSED: [2026-07-29 Wed 23:07]
   - Note taken on [2026-07-24 Fri 10:21] \\
     ---
     id: Linker Command File
@@ -123,12 +123,15 @@
     1. https://software-dl.ti.com/ccs/esd/documents/sdto_cgt_Linker-Command-File-Primer.html
     2. https://stackoverflow.com/questions/7718299/whats-an-object-file-in-c
     
-* TODO Finish CV for Ban Vien, Realtek and Faraday.
-  DEADLINE: <2026-07-24 Fri>
-* TODO Finish research to unlock C2000 series CPU.
+* DONE Finish CV for Ban Vien, Realtek and Faraday.
+  DEADLINE: <2026-07-24 Fri> CLOSED: [2026-07-29 Wed 23:08]
+* TODO [#C] Finish research to unlock C2000 series CPU.
   DEADLINE: <2026-07-24 Fri>
   [2026-07-23 Thu]
 * TODO Figure out what happens when we don't set EALLOW explicitly.
   DEADLINE: <2026-07-29 Wed>
   - Note taken on [2026-07-29 Wed 12:34] \\
     This is to prevent spurious CPU writes. But it enables by default (it's set to 0). Do we need to explicitly disable it?
+* TODO Finish chapter on sequential logic circuit.
+  DEADLINE: <2026-07-30 Thu>
+  [2026-07-29 Wed]
