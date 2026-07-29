@@ -128,3 +128,7 @@
 * TODO Finish research to unlock C2000 series CPU.
   DEADLINE: <2026-07-24 Fri>
   [2026-07-23 Thu]
+* TODO Figure out what happens when we don't set EALLOW explicitly.
+  DEADLINE: <2026-07-29 Wed>
+  - Note taken on [2026-07-29 Wed 12:34] \\
+    This is to prevent spurious CPU writes. But it enables by default (it's set to 0). Do we need to explicitly disable it?
