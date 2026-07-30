@@ -128,8 +128,10 @@
 * TODO [#C] Finish research to unlock C2000 series CPU.
   DEADLINE: <2026-07-24 Fri>
   [2026-07-23 Thu]
-* TODO Figure out what happens when we don't set EALLOW explicitly.
-  DEADLINE: <2026-07-29 Wed>
+* DONE Figure out what happens when we don't set EALLOW explicitly.
+  DEADLINE: <2026-07-29 Wed> CLOSED: [2026-07-30 Thu 09:45]
+  - Note taken on [2026-07-30 Thu 09:44] \\
+    If we don't set it explicitly, the CPU wouldn't be able to write to EALLOW protected registers. We must set it explicitly.
   - Note taken on [2026-07-29 Wed 12:34] \\
     This is to prevent spurious CPU writes. But it enables by default (it's set to 0). Do we need to explicitly disable it?
 * TODO Finish chapter on sequential logic circuit.
