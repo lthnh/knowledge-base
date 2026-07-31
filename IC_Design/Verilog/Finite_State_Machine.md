@@ -44,3 +44,19 @@ The next-state logic will compute the next values for state variables. The resul
 The output logic will compute the output values based on the current state. And in the case of Mealy machine, it's also based on system inputs. Each output signal requires a dedicated combination circuit, as shown in the section above.
 ## FSM Design Process
 Word Desc. -> State Diagram -> State Transition Table -> State Memory Synthesis -> Next State Logic Synthesis -> Output Logic Synthesis -> Final Logic Diagram.
+## FSM Reset's Condition
+It is important to has some sort of reset mechanisms to set the initial state for the FSM. Since the state memory is made up of D-flip-flops, we can use the reset lines of the D-flip-flops to set its initial condition. But this is not enough if the system have a none zero binary code initial state. To deal with this, preset lines must be include to set the D-flip-flops to one if necessary. 
+
+Resets are often asynchronous to immediately alter the state of FSM. This is beneficial in case of clock failure.
+## Determine the Maximum Clock Frequency of an FSM
+Many sources of delay can determine the maximum frequency an FSM can reliably operate. They are listed below:
+- $t_{CQ}$: the delay between when an input appears on the D pin of D-flip-flop to the output Q pin.
+- $t_{cmb}$: the delay when signals are passing through combinational circuit.
+- $t_{int}$: the delay of interconnect.
+- $t_{setup}$: the minimum time in which the input signals need to be ready before the clock rising edge for D-flip-flop to not go metastable.
+- $t_{margin}$: the extra padding time to ensure the system is stable when there is an extra delay in the circuit, typical 10% in modern systems.
+
+The sum of all these delay sources constitutes the period of the clock. It is also called the period of signal. The inverse of it is frequency.
+
+For modern D-flip-flops, $t_{CQ}$ is often larger than $t_{hold}$. This means $t_{hold}$ is inherently satisfied. But if in rare cases, $t_{hold}$ is larger than $t_{CQ}$ then it is used in place of $t_{CQ}$.
+
