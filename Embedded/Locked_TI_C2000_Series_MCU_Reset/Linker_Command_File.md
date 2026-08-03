@@ -189,7 +189,7 @@ MEMORY
 }
 ```
 
-Each page of memory is completely independent so you can result memory range names and *memory addresses*.
+Each page of memory is completely independent so you can reuse memory range names and *memory addresses*.
 This is a bad idea:
 
 ```ld
