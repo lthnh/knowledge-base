@@ -5,8 +5,13 @@
   - Note taken on [2026-07-29 Wed 12:34] \\
     This is to prevent spurious CPU writes. But it enables by default (it's set to 0). Do we need to explicitly disable it?
   [2026-07-29 Wed]
-* TODO Test canopennode C2000 bootloader on Launchpad dev board [0/2]
-  DEADLINE: <2026-07-31 Fri>
-- [ ] Modify code to work with F28069M
+* DONE Test canopennode C2000 bootloader on Launchpad dev board [1/2]
+  DEADLINE: <2026-07-31 Fri> CLOSED: [2026-08-04 Tue 18:23]
+  - Note taken on [2026-08-04 Tue 18:23] \\
+    This project won't work for the same reason that we have figured out since day one. The original project is intended to be flashed into FLASH memory then loaded into RAM. Its backdoor is nothing more than a waiting windows that looks for valid SDO write to enter bootloader.
+- [X] Modify code to work with F28069M
 - [ ] Load code into dev board
   [2026-07-31 Fri]
+* TODO Finish Fiverr starter process
+  DEADLINE: <2026-08-05 Wed>
+  [2026-08-04 Tue]

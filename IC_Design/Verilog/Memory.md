@@ -42,4 +42,29 @@ This memory can be either asynchronous or synchronous. The term *latency* descri
 ### Mask Read Only Memory
 With this memory type, all the features necessary for a memory are fabricated, with the exception of the final connections between NMOS transistors and the word and BLs. This state is said to be "unprogrammed". Once the desired information to be stored is provided by the customer, the fabrication process is completed by adding the connections between certain NMOS transistors and the word/BLs in order to create a logic 0's. This state is said to be "programmed".
 ### Programmable Read Only Memory
+A PROM is created in manner similar to an MROM, except that the programming is accomplished post-fabrication through the use of fuses and anti-fuses. A fuse is an electrical connection that is normally conductive. After a certain amount of current passes through it, it melts and creates an open circuit. The anti-fuse operates in the manner opposite of fuse. Normally, anti-fuse is non-conductive. After a certain amount of current is forced through it, the insulating material breaks down and creates a conduction path. A PROM uses fuses or anti-fuses in order to connect/disconnect the NMOS transistors in the ROM array to the word/BLs.
+
+A PROM programmer is used to burn the fuses or anti-fuses.
+### Erasable Programmable Read Only Memory
+This is a interesting type of ROM. Its based on floating-gate conductor. It works by adding an additional gate on top of the already existing gate of the transistor. This modifies the transistor threshold level such that it's impossible to turn on with normal CMOS levels. This threshold can be changed by apply large electric field between the two metal conductors. The charges from the metal will tunnel through the oxide layer due to a phenomenon called Fowler–Nordheim tunneling. This causes the oxide to turn into a conductive layer and reduces the threshold voltage, making the transistor impossible to turn off with normal CMOS levels.
+
+To erase this type of ROM, the memory must be subjected to UV light source to knock charges off the oxide layer, turn it once again into a insulating layer.
+### Electrically Erasable Programmable Read Only Memory
+This is an improvement over the previous ROM type. With this ROM type, additional circuitry is added to generate large electric field to apply across the oxide layer. This removes the charges reside inside the oxide and effectively erases memory. EEPROM doesn't need an external programmer and it also doesn't need to leave the system to be programmed.
+### FLASH Memory
+One of the early drawbacks of EEPROM is the additional circuitry that provides the ability to program and erase individual bits also adds to the size of each individual storage element. FLASH EEPROM attempted to improve that by programming and erasing large groups of data, or *blocks*. This allowed individual storage cells to shrink and provide higher memory density. This new architecture is called *NAND FLASH*. Today, NAND FLASH is used in nearly all devices.
+
+To provide individual word access, NOR FLASH was introduced. This architecture provides faster read times than NAND FLASH but the additional circuitry causes the write and erase times to be slower and the individual storage cell has to be larger.
+
+Due to NAND FLASH has faster write times and higher density, it is seeing higher adoption than NOR FLASH. NOR FLASH is considered RAM, while NAND is typically not.
+## Volatile Memory Technology
+### Static Random-Access Memory
+SRAM stores information using a cross-coupled inverter feedback loop. In basic SRAM storage cell, two access transistors are used to read from and write the storage cell. The cell has two complementary port BL and BL'. Due to the interving functionality, these two ports always complements each other. This is advantageous to determine the data value because the signal effectively has double strength.
+
+This configuration takes 6 transistor to be implemented and is often called 6 T configuration. Its simple configuration makes it very fast. Thus SRAM cells are often used for cache memory in computer.
+
+To build an SRAM memory, cells are arranged in an array pattern. Word lines are shared horizontally across the array to provide addressing capability. An address decoder is used to convert binary address into appropriate word-line assertion. N storage cells mean the data word is N-bit long. BLs are shared vertically across the array to provide data access (either read or write). A data line controller handles data read or write based on external write enable signal.
+
+The data line controller also handles determining the correct logic value read from the cells by comparing BL to BL'. As more cells are added to BLs, the signal magnitude being driven by storage cells diminishes due to loading effect from other cells. This is where complementary data signals are useful. The comparison of BL to BL' is handled by an differential amplifier to determine storage cell outputs even when the incoming signals are very small.
+### Dynamic Random-Access Memory
 
