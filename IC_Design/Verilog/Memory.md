@@ -67,4 +67,21 @@ To build an SRAM memory, cells are arranged in an array pattern. Word lines are 
 
 The data line controller also handles determining the correct logic value read from the cells by comparing BL to BL'. As more cells are added to BLs, the signal magnitude being driven by storage cells diminishes due to loading effect from other cells. This is where complementary data signals are useful. The comparison of BL to BL' is handled by an differential amplifier to determine storage cell outputs even when the incoming signals are very small.
 ### Dynamic Random-Access Memory
+DRAM stores information using a capacitor. In a basic DRAM cell, there are a transistor and a capacitor. This is referred to as 1T1C configuration. Just like SRAM, word lines are used to access the storage elements. The term *digit line* (DL) is used to describe the vertical connection to the storage cells.
+
+DRAM storage element requires less area than SRAM. This allows DRAM to have higher memory density than SRAM. But there are a few caveats you should know:
+1. Charge in capacitor will slowly dissipate over time.
+2. The voltage of the wordline must be larger than $V_{CC}$ in order to turn on the access transistor.
+3. Charge sharing phenomenon.
+
+For the first caveat, DRAM must have a dedicated circuit to refresh the contents of the storage cell. A refresh cycle involves periodically reading the value stored in the cell then writing back the same value at full strength.
+
+In DRAM, the source terminal of the access transistor is connected to a capacitor. If the capacitor is storing a 1, the gate voltage of the transistor must be larger than or equal to $V_{CC} + V_T$ in order to turn on the transistor. This requires a *charge pump* to create this voltage on word lines. The process of charging takes time, thus affects the maximum of DRAM.
+
+When the access transistor is closed, the charge sharing phenomenon appears. This makes the charge stored in the capacitors cannot develop a full voltage level across DL when the transistor is closed. In practice, the capacitance of DL is much larger than that of capacitor due to having a larger area and being connected to other storage cells. The resulting voltage on DL is much smaller then the original voltage stores on a cell. This creates issues cause the voltage on word lines is not large enough to be detected by standard logic gate or latch. To overcome this, modern DRAM arrays use complementary storage cells and sense amplifiers. The complementary cells store data and its complement. Two DLs (DL and DL') are used to read the contents of the cells. DL and DL' are precharged to exactly $\frac{V_{CC}}{2}$. When the access transistors are closed, their capacitors share charges with DLs and move them slightly from $\frac{V_CC}{2}$ in different directions. This allows TWICE voltage difference to be developed during a read. A sense amplifier is then used to boost this small voltage deviations from $\frac{v_{CC}}{2}$ on DL and DL' to full logic levels.
+
+The sense amplifier sits between DL and DL' and has two complementary networks: the N-sense amplifier and P-sense amplifier. The N-sense amplifier is used to pull a signal that is below $\frac{V_{CC}}{2}$ (either DL or DL') to GND. A control signal (N-Latch) is used to turn on this network. The P-sense amplifier is used to pull a signal that is above $\frac{V_{CC}}{2}$ up to $V_{CC}$. The two networks are activated in sequence, with the N-sense network activating first.
+
+A DRAM write operation occurs as followed. First the access transistors to complementary cells are open. Then the precharge drivers are disabled. Finally, data-in line driver writes full logic level signals to the storage cells.
+## Modelling Memory with Verilog
 
