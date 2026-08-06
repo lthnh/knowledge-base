@@ -1,3 +1,8 @@
+---
+id: Number_Systems
+aliases: []
+tags: []
+---
 ## Positional Number Systems
 A positional number system allows the expansion of the original set of symbols to represent any arbitrarily large (or small) value.
 

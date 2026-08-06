@@ -1,3 +1,8 @@
+---
+id: Signal_Representations
+aliases: []
+tags: []
+---
 ## Analog signal
 Analog signal can be considered a continuous function of time. The signal itself corresponds directly with the information it represents.
 ## Digital signal
