@@ -15,3 +15,15 @@
 * TODO Finish Fiverr starter process
   DEADLINE: <2026-08-06 Thu>
   [2026-08-04 Tue]
+* TODO Implement a fully functional RISC-V microcontroller [0/6]
+  - [ ] Define specifications.
+  - Functional design.
+    - [ ] Stimulation and verification.
+  - Synthesis design.
+    - [ ] Stimulation and verification.
+  - Technology mapping.
+    - [ ] Stimulation and verification.
+  - Place and route.
+    - [ ] Stimulation and verification.
+  - [ ] Final verification against specifications.
+  [2026-08-06 Thu]
