@@ -28,3 +28,8 @@
     - [ ] Stimulation and verification.
   - [ ] Final verification against specifications.
   [2026-08-06 Thu]
+* TODO Implement Single Cycle RISC-V CPU
+  DEADLINE: <2026-08-09 Sun>
+- Implement ALU
+  - [ ] Carry Look Ahead Adder
+  [2026-08-07 Fri]
