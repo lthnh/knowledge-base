@@ -29,7 +29,9 @@
   - [ ] Final verification against specifications.
   [2026-08-06 Thu]
 * TODO Implement Single Cycle RISC-V CPU
-  DEADLINE: <2026-08-09 Sun>
+  DEADLINE: <2026-08-16 Sun>
 - Implement ALU
-  - [ ] Carry Look Ahead Adder
+  - [X] Carry Look Ahead Adder
+  - [ ] Unsigned/Signed Multiplication
+  - [ ] Unsigned/Signed Division
   [2026-08-07 Fri]
