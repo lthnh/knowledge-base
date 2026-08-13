@@ -35,3 +35,4 @@
   - [ ] Unsigned/Signed Multiplication
   - [ ] Unsigned/Signed Division
   [2026-08-07 Fri]
+* TODO Check function calling conventions for potential conflicts.
