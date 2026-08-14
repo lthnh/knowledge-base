@@ -30,9 +30,10 @@
   [2026-08-06 Thu]
 * TODO Implement Single Cycle RISC-V CPU
   DEADLINE: <2026-08-16 Sun>
-- Implement ALU
-  - [X] Carry Look Ahead Adder
-  - [ ] Unsigned/Signed Multiplication
-  - [ ] Unsigned/Signed Division
+** Implement ALU
+- [X] Carry Look Ahead Adder
+- [X] Addition/Subtraction Overflow Detection
+- [ ] Unsigned/Signed Multiplication
+- [ ] Unsigned/Signed Division
   [2026-08-07 Fri]
 * TODO Check function calling conventions for potential conflicts.
