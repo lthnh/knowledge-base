@@ -37,7 +37,7 @@
 - [ ] Unsigned/Signed Division
   [2026-08-07 Fri]
 * TODO Check function calling conventions for potential conflicts.
-* TODO LOCKED C2000 MCU
-- [ ] Check jump to .cinit possibility after WD reset.
+* TODO LOCKED C2000 MCU [1/2]
+- [X] Check jump to .cinit possibility after WD reset.
 - [ ] Check stalling problem at PC=0x3FF9FA.
   [2026-08-17 Mon]
