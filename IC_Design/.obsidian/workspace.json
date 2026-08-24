@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers/Linear_Amplification.md",
+                "file": "Verilog/Finite_State_Machine.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linear_Amplification"
+              "title": "Finite_State_Machine"
             }
           }
         ],
@@ -297,10 +297,18 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "50ee3d24dfecc4af",
+  "active": "237f3d5cb72eeb53",
   "lastOpenFiles": [
-    "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers/Basics.md",
+    "Verilog/Memory.md",
+    "Verilog/Substraction_Circuit.md",
+    "Verilog/Addition_Circuit.md",
+    "Verilog/Finite_State_Machine.md",
+    "Verilog/Division_Circuit.md",
+    "Verilog/Digital_Circuit_Characteristics.md",
+    "Verilog/Design_Abstraction.md",
+    "Verilog/Combinatoric_Circuit_Design.md",
     "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers/Linear_Amplification.md",
+    "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers/Basics.md",
     "Advanced_Circuit_Analysis/Images/npn-transistor-amplifier-vtc.png",
     "Advanced_Circuit_Analysis/Images/nmos-transistor-amplifier-vtc.png",
     "Jobs/Job_Applications_Tracker.md",
@@ -326,15 +334,7 @@
     "Advanced Circuit Analysis/Notes/BJTs/Operation in Active Mode.md",
     "Advanced Circuit Analysis/Notes/BJTs/Modes of Operation.md",
     "Advanced Circuit Analysis/Notes/BJTs/Device Structure.md",
-    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/Channel Length Modulation.md",
-    "Advanced Digital IC Design/Class Notes/09.03.2026.md",
-    "Advanced Circuit Analysis/Notes/7.5 Discrete-Circuit Amplifiers - Exercises.md",
     "Pasted image 20260530194105.png",
-    "Advanced Digital IC Design/Class Notes/02.03.2026.md",
-    "Advanced Digital IC Design/Class Notes/02.02.2026.md",
-    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/Drain-Induced Barrier Lowering.md",
-    "Advanced Digital IC Design/MOS Transistor Theory/Nonideal I-V Effects/Subthreshold Leakage.md",
-    "Advanced Circuit Analysis/Notes/Semiconductors Theory/Capacitive Effects in pn Junction.md",
     "Untitled.canvas",
     "Advanced Digital IC Design/Images/photo-masking-w-negative-photoresist.png",
     "Advanced Circuit Analysis/Notes/Signal Generators and Waveform-Shaping Circuits",

@@ -1,0 +1,1 @@
+In spirit, it's the same as Claude Code. But it offers coordination between much wide range of models. It also has free models which I will use extensively.
