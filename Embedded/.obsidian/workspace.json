@@ -90,9 +90,23 @@
               "icon": "lucide-file",
               "title": "OpenCode"
             }
+          },
+          {
+            "id": "db25398f66847105",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Agentic_Programming/Claude_Code/Issues.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Issues"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -258,8 +272,9 @@
   },
   "active": "c3ac2f66998b1898",
   "lastOpenFiles": [
-    "Agentic_Programming/Skills.md",
     "Agentic_Programming/OpenCode.md",
+    "Agentic_Programming/Claude_Code/Issues.md",
+    "Agentic_Programming/Skills.md",
     "Agentic_Programming",
     "Agentic_Programming/Claude_Code/Context Cost.md",
     "Claude_Code/Skills",

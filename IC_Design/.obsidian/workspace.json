@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
+                "file": "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Planning"
+              "title": "Problems"
             }
           }
         ],
@@ -299,8 +299,9 @@
   },
   "active": "237f3d5cb72eeb53",
   "lastOpenFiles": [
-    "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
     "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
+    "Jobs/Job_Applications_Tracker.md",
+    "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
     "Projects/Single_Cycle_RISC-V_CPU",
     "Verilog/Finite_State_Machine.md",
     "Verilog/Memory.md",
@@ -314,7 +315,6 @@
     "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers/Basics.md",
     "Advanced_Circuit_Analysis/Images/npn-transistor-amplifier-vtc.png",
     "Advanced_Circuit_Analysis/Images/nmos-transistor-amplifier-vtc.png",
-    "Jobs/Job_Applications_Tracker.md",
     "Advanced_Circuit_Analysis/Images/generic-current-mirror.png",
     "Advanced_Circuit_Analysis/Notes/6_IC_Amplifiers/MOSFET_Current_Steering.md",
     "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers",

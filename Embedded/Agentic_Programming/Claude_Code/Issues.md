@@ -1,0 +1,1 @@
+Installing Caveman plugin on Windows has issue with Git Bash due to platform dependent '&' executor. Wait till this issue is resolved.
