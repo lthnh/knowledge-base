@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Verilog/Finite_State_Machine.md",
+                "file": "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finite_State_Machine"
+              "title": "Planning"
             }
           }
         ],
@@ -299,10 +299,13 @@
   },
   "active": "237f3d5cb72eeb53",
   "lastOpenFiles": [
+    "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
+    "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
+    "Projects/Single_Cycle_RISC-V_CPU",
+    "Verilog/Finite_State_Machine.md",
     "Verilog/Memory.md",
     "Verilog/Substraction_Circuit.md",
     "Verilog/Addition_Circuit.md",
-    "Verilog/Finite_State_Machine.md",
     "Verilog/Division_Circuit.md",
     "Verilog/Digital_Circuit_Characteristics.md",
     "Verilog/Design_Abstraction.md",
@@ -317,7 +320,6 @@
     "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers",
     "Advanced_Circuit_Analysis/Notes/6_IC_Amplifiers/Basic_MOSFET_Current_Mirror.md",
     "Pasted image 20260819162832.png",
-    "Projects/Single_Cycle_RISC-V_CPU.md",
     "Advanced_Circuit_Analysis/Notes/6_IC_Amplifiers",
     "Study Notes",
     "Advanced_Digital_IC_Design/Class_Notes/02.03.2026.md",
@@ -333,7 +335,6 @@
     "Verilog/Signal Representations.md",
     "Advanced Circuit Analysis/Notes/BJTs/Operation in Active Mode.md",
     "Advanced Circuit Analysis/Notes/BJTs/Modes of Operation.md",
-    "Advanced Circuit Analysis/Notes/BJTs/Device Structure.md",
     "Pasted image 20260530194105.png",
     "Untitled.canvas",
     "Advanced Digital IC Design/Images/photo-masking-w-negative-photoresist.png",
@@ -344,7 +345,6 @@
     "Advanced Circuit Analysis/Images/profiles-of-minority-carriers-concentrations.png",
     "Advanced Digital IC Design/Images/intrinsic-gate-capacitance.png",
     "Pasted image 20260323192827.png",
-    "Delay",
     "Advanced Digital IC Design/Images/three-types-of-diffusion.png"
   ]
 }
