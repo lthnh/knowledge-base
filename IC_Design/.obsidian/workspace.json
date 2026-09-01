@@ -125,16 +125,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
+                "file": "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Problems"
+              "title": "Planning"
+            }
+          },
+          {
+            "id": "9f0b12c783368b67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Layout/Main_Design_Steps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Main_Design_Steps"
+            }
+          },
+          {
+            "id": "5b16692c053536ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Layout/Imaging Errors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Imaging Errors"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -297,10 +325,14 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "237f3d5cb72eeb53",
+  "active": "50ee3d24dfecc4af",
   "lastOpenFiles": [
-    "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
+    "Layout/Main_Design_Steps.md",
+    "Layout/Imaging Errors.md",
+    "Layout",
     "Jobs/Job_Applications_Tracker.md",
+    "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
+    "IC_Main_Design_Steps",
     "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
     "Projects/Single_Cycle_RISC-V_CPU",
     "Verilog/Finite_State_Machine.md",
@@ -333,15 +365,11 @@
     "Number Systems.md",
     "Verilog/Digital Circuit Characteristics.md",
     "Verilog/Signal Representations.md",
-    "Advanced Circuit Analysis/Notes/BJTs/Operation in Active Mode.md",
-    "Advanced Circuit Analysis/Notes/BJTs/Modes of Operation.md",
     "Pasted image 20260530194105.png",
     "Untitled.canvas",
     "Advanced Digital IC Design/Images/photo-masking-w-negative-photoresist.png",
     "Advanced Circuit Analysis/Notes/Signal Generators and Waveform-Shaping Circuits",
     "Untitled 1",
-    "Advanced Digital IC Design/CMOS Processing Technology",
-    "Verilog",
     "Advanced Circuit Analysis/Images/profiles-of-minority-carriers-concentrations.png",
     "Advanced Digital IC Design/Images/intrinsic-gate-capacitance.png",
     "Pasted image 20260323192827.png",

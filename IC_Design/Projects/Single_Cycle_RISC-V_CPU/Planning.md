@@ -13,10 +13,12 @@ RCA is pretty straightforward to implement. CLA is a bit harder. Brock only has 
 We will build 32-bit CLA according to ref #1.
 
 Update #1: It is done and tested.
-## Connect everything
+## Connect Everything
 Done.
 ## Testing
 Ongoing.
+### Tcl Script Usage
+
 ## References
 1. Lahari G R, “Binary 32-Bit Adder Design Using Carry Look Ahead Adder in Electric”, IJRITCC, vol. 11, no. 11, pp. 1115–1118, May 2024.
 2. B. J. LaMeres, Introduction to Logic Circuits & Logic Design with Verilog. Springer, 2019.
