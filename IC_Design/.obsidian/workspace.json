@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
+                "file": "Layout/CMOS_Standard_Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modeling_the_Zener_Diode"
+              "title": "CMOS_Standard_Process"
             }
           }
         ],
@@ -397,17 +397,17 @@
   },
   "active": "830cc5bc31302995",
   "lastOpenFiles": [
+    "Layout/Metallization.md",
+    "Computer_Arch_For_Machine_Learning_Algo/Computational_Characteristics_of_ML_Algos.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Voltage_Regulation_using_Forward_Voltage_Drop.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/pn_Junction_Diode.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Zener_Diodes.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Ideal_Diode.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
     "Computer_Arch_For_Machine_Learning_Algo/Class Notes/2026-09-04.md",
-    "Computer_Arch_For_Machine_Learning_Algo/Computational_Characteristics_of_ML_Algos.md",
     "Computer_Arch_For_Machine_Learning_Algo/Class Notes",
-    "CMOS_Standard_Process.md",
+    "Layout/CMOS_Standard_Process.md",
     "Computer_Arch_For_Machine_Learning_Algo",
-    "Layout/Metallization.md",
     "Layout/Growing_&_Structuring_Silicon_Layers.md",
     "Layout/Doping.md",
     "Layout/Applying_&_Structuring_Oxide_Errors.md",

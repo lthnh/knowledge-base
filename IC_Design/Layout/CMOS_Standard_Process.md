@@ -15,7 +15,6 @@ A **threshold-adjust implantation** can compensate for this mismatch by implanti
 
 **Triple-well process:** One transistor's well is placed **inside another oppositely doped well**, creating a _well-in-a-well_. For example, with the p-substrate shown:
 **p-substrate → deep n-well → p-well → NMOS**
-
 while the PMOS remains in a separate n-well. This arrangement creates isolating p–n junctions between the transistor backgates and the original substrate. When these junctions are reverse-biased, the **NMOS and PMOS backgate/body potentials can be controlled more independently**. This extra degree of freedom is particularly useful in applications such as high-voltage electronics.
 
 The progression can therefore be remembered as:
@@ -23,3 +22,16 @@ The progression can therefore be remembered as:
 **Single-well → simplest, but limited doping control**  
 **Twin-well → independent doping optimization**  
 **Triple-well → independent doping + greater body-potential/isolation flexibility**
+## BEOL: Connecting Devices
+- The example **FEOL process requires five masks** to form the transistor structures.
+- During **BEOL metallization**, each metal layer requires **two additional masks**:
+    1. **Contact/via mask** — defines openings through the insulating oxide.
+    2. **Metal mask** — defines the interconnect pattern above the oxide.
+- After metallization, the chip is covered with a **passivation layer**, commonly silicon nitride (Si₃N₄), which protects the chip, particularly against moisture.
+- The passivation must be **opened over the bond pads** so electrical connections can reach the chip. These openings require **one additional mask**.
+- Depending on the package, the exposed bond pads are connected externally either by **bond wires** or by being **soldered directly to a chip carrier**.
+So, for a process with NN metal layers, the excerpt implies a total mask count of:
+
+$$\boxed{5 + 2N + 1 = 6 + 2N}$$
+
+where **5** are FEOL masks, **2 per metal layer** are BEOL masks, and **1** is the final passivation-opening mask.
