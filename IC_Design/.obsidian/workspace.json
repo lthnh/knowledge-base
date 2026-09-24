@@ -258,9 +258,23 @@
               "icon": "lucide-file",
               "title": "Partitioning and Floorplanning"
             }
+          },
+          {
+            "id": "8af3c9bccdc39906",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Detailed_MOS_Gate_Capacitance_Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Detailed_MOS_Gate_Capacitance_Model"
+            }
           }
         ],
-        "currentTab": 17
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -423,42 +437,42 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "50ee3d24dfecc4af",
+  "active": "8af3c9bccdc39906",
   "lastOpenFiles": [
-    "Digital_Design_On_FPGA/Study_Notes/2026-09-13.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Simple_MOS_Capacitance_Models.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Detailed_MOS_Gate_Capacitance_Model.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Detailed_MOS_Diffusion_Capacitance_Model.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/C-V_Characteristics.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/Nonideal_I-V_Effects/Channel_Length_Modulation.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/Nonideal_I-V_Effects/Body_Effect.md",
+    "Advanced_Circuit_Analysis/Notes/3_MOSFETs/Device_Operation.md",
+    "Advanced_Circuit_Analysis/Notes/3_MOSFETs/Device_Structure.md",
+    "Advanced_Circuit_Analysis/Notes/3_MOSFETs/DC_Analysis.md",
+    "Advanced_Circuit_Analysis/Notes/3_MOSFETs/Characteristics_of_p-type_MOSFET.md",
+    "Advanced_Circuit_Analysis/Notes/4_BJTs/Operation_in_Active_Mode.md",
+    "Advanced_Circuit_Analysis/Notes/4_BJTs/Modes_of_Operation.md",
+    "Advanced_Circuit_Analysis/Notes/4_BJTs/Device_Structure.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_Diode_Forward_Characteristic.md",
+    "Advanced_Circuit_Analysis/Notes/1_Semiconductors_Theory/pn_Junction_(Open-Circuit).md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Zener_Diodes.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Voltage_Regulation_using_Forward_Voltage_Drop.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/pn_Junction_Diode.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Applications_of_Diode.md",
+    "Advanced_Circuit_Analysis/Notes/2_Diodes/Ideal_Diode.md",
+    "2026-09-18.md",
+    "Untitled.md",
     "Physical Design Flow/Partitioning and Floorplanning.md",
+    "Digital_Design_On_FPGA/Study_Notes/2026-09-13.md",
     "Physical Design Flow",
     "Digital_Design_On_FPGA/Study_Notes",
     "Digital_Design_On_FPGA",
     "2026-09-11.md",
-    "Layout/Metallization.md",
-    "Computer_Arch_For_Machine_Learning_Algo/Computational_Characteristics_of_ML_Algos.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Voltage_Regulation_using_Forward_Voltage_Drop.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/pn_Junction_Diode.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Zener_Diodes.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Ideal_Diode.md",
-    "Computer_Arch_For_Machine_Learning_Algo/Class Notes/2026-09-04.md",
     "Computer_Arch_For_Machine_Learning_Algo/Class Notes",
-    "Layout/CMOS_Standard_Process.md",
     "Computer_Arch_For_Machine_Learning_Algo",
-    "Layout/Growing_&_Structuring_Silicon_Layers.md",
-    "Layout/Doping.md",
-    "Layout/Applying_&_Structuring_Oxide_Errors.md",
-    "Diary/2026-08-31.md",
-    "Layout/Main_Design_Steps.md",
-    "Layout/Imaging Errors.md",
     "Layout",
-    "Jobs/Job_Applications_Tracker.md",
-    "Projects/Single_Cycle_RISC-V_CPU/Planning.md",
     "IC_Main_Design_Steps",
-    "Projects/Single_Cycle_RISC-V_CPU/Problems.md",
     "Projects/Single_Cycle_RISC-V_CPU",
-    "Verilog/Finite_State_Machine.md",
-    "Verilog/Memory.md",
-    "Verilog/Substraction_Circuit.md",
-    "Verilog/Addition_Circuit.md",
-    "Verilog/Division_Circuit.md",
     "Advanced_Circuit_Analysis/Images/npn-transistor-amplifier-vtc.png",
     "Advanced_Circuit_Analysis/Images/nmos-transistor-amplifier-vtc.png",
     "Advanced_Circuit_Analysis/Images/generic-current-mirror.png",
