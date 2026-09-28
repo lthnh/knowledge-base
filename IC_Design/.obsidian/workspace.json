@@ -265,12 +265,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Detailed_MOS_Gate_Capacitance_Model.md",
+                "file": "2026-09-27.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Detailed_MOS_Gate_Capacitance_Model"
+              "title": "2026-09-27"
             }
           }
         ],
@@ -340,15 +340,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7f111551c3342adc",
+        "id": "fea3ccd467c0cfd6",
         "type": "tabs",
         "children": [
           {
-            "id": "1824349b2517cb05",
+            "id": "705bb8f82a188a5e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Advanced_Techniques_In_Microwave_Systems/Class_Notes/2026-09-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -362,11 +363,12 @@
             }
           },
           {
-            "id": "1b154dae6ef7f82a",
+            "id": "eb8bfc95704aa941",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Advanced_Techniques_In_Microwave_Systems/Class_Notes/2026-09-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -375,7 +377,7 @@
             }
           },
           {
-            "id": "66c57138851f1499",
+            "id": "7887165c4b3ee8d5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -390,7 +392,7 @@
             }
           },
           {
-            "id": "40ea7dd4584ef0bc",
+            "id": "3b4ffb17e4f25a7b",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -404,18 +406,18 @@
             }
           },
           {
-            "id": "0ab898cc4d480f48",
+            "id": "7b75db4dbb085f68",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "Advanced_Techniques_In_Microwave_Systems/Class_Notes/2026-09-26.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline"
             }
           }
         ]
@@ -439,8 +441,14 @@
   },
   "active": "8af3c9bccdc39906",
   "lastOpenFiles": [
-    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Simple_MOS_Capacitance_Models.md",
+    "Digital_Design_On_FPGA/Study_Notes/2026-09-13.md",
+    "2026-09-27.md",
+    "Untitled.md",
+    "Advanced_Techniques_In_Microwave_Systems/Class_Notes/2026-09-26.md",
+    "Computer_Arch_For_Machine_Learning_Algo/Class_Notes/2026-09-25.md",
+    "Computer_Arch_For_Machine_Learning_Algo/Class_Notes/2026-09-18.md",
     "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Detailed_MOS_Gate_Capacitance_Model.md",
+    "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Simple_MOS_Capacitance_Models.md",
     "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/Detailed_MOS_Diffusion_Capacitance_Model.md",
     "Advanced_Digital_IC_Design/MOS_Transistor_Theory/C-V_Characteristics/C-V_Characteristics.md",
     "Advanced_Digital_IC_Design/MOS_Transistor_Theory/Nonideal_I-V_Effects/Channel_Length_Modulation.md",
@@ -459,15 +467,9 @@
     "Advanced_Circuit_Analysis/Notes/2_Diodes/pn_Junction_Diode.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Applications_of_Diode.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Ideal_Diode.md",
-    "2026-09-18.md",
-    "Untitled.md",
-    "Physical Design Flow/Partitioning and Floorplanning.md",
-    "Digital_Design_On_FPGA/Study_Notes/2026-09-13.md",
     "Physical Design Flow",
     "Digital_Design_On_FPGA/Study_Notes",
     "Digital_Design_On_FPGA",
-    "2026-09-11.md",
     "Computer_Arch_For_Machine_Learning_Algo/Class Notes",
     "Computer_Arch_For_Machine_Learning_Algo",
     "Layout",
