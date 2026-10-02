@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" id="Layer_1" enable-background="new -0.5 -16.5 289.627 578.676" version="1.1" xml:space="preserve" width="289.627px" preserveAspectRatio="xMidYMid meet" viewBox="-0.5 -16.5 289.627 578.676" height="578.676px" x="0px" y="0px">
+<path fill="none" d="M158.838,54.305c0,6.627-5.371,12-12,12H12.5c-6.627,0-12-5.373-12-12  V38.074c0-6.627,5.373-12,12-12h134.338c6.629,0,12,5.373,12,12V54.305z" stroke-miterlimit="10" stroke="#000000"/>
+<text font-size="10" font-family="'Helvetica'" transform="matrix(1 0 0 1 6.6416 49.2051)">Run Synthesis or Implementation</text>
+<text font-size="10" font-family="'Helvetica'" transform="matrix(1 0 0 1 26.0718 288.0781)">Parse Using xvlog/xvhdl</text>
+<text enable-background="new    " transform="matrix(1 0 0 1 42.7715 440.9121)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">Simulation Using</tspan><tspan x="-0.285" font-size="10" y="12" font-family="'Helvetica'">xsim &lt;snapshot&gt;</tspan></text>
+<text enable-background="new    " transform="matrix(1 0 0 1 49.9966 123.6016)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">Create Netlist</tspan><tspan x="-27.504" font-size="10" y="12" font-family="'Helvetica'">write_verilog or write_vhdl</tspan></text>
+<text font-size="10" font-family="'Helvetica'" transform="matrix(1 0 0 1 95.6504 127.6016)"> </text>
+<text enable-background="new    " transform="matrix(1 0 0 1 46.9365 -7.9102)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">Post-Synthesis</tspan><tspan x="-12.505" font-size="10" y="12" font-family="'Helvetica'">Post-Implementation</tspan><tspan x="10.005" font-size="10" y="24" font-family="'Helvetica'">Simulation</tspan></text>
+<path fill="none" d="M158.838,133.716c0,6.627-5.371,12-12,12H12.5  c-6.627,0-12-5.372-12-12v-16.231c0-6.627,5.373-12,12-12h134.338c6.629,0,12,5.373,12,12V133.716z" stroke-miterlimit="10" stroke="#000000"/>
+<path fill="none" d="M158.838,292.539c0,6.627-5.371,12-12,12H12.5  c-6.627,0-12-5.373-12-12V276.31c0-6.628,5.373-12,12-12h134.338c6.629,0,12,5.372,12,12V292.539z" stroke-miterlimit="10" stroke="#000000"/>
+<path fill="none" d="M158.838,451.363c0,6.627-5.371,12-12,12H12.5  c-6.627,0-12-5.373-12-12v-16.23c0-6.627,5.373-12,12-12h134.338c6.629,0,12,5.373,12,12V451.363z" stroke-miterlimit="10" stroke="#000000"/>
+<line fill="none" x1="79.17" x2="79.17" y1="66.305" y2="95.519" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"/>
+<polygon points="76.039,93.29 79.305,105.485 82.576,93.29 "/>
+<text enable-background="new    " transform="matrix(1 0 0 1 53.0513 203.0122)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">Gather Files</tspan><tspan x="-18.89" font-size="10" y="12" font-family="'Helvetica'">(Create Project File )</tspan></text>
+<text font-size="10" font-family="'Helvetica'" transform="matrix(1 0 0 1 95.6504 207.0117)"> </text>
+<line fill="none" x1="79.17" x2="79.17" y1="145.716" y2="174.93" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"/>
+<polygon points="76.039,172.701 79.305,184.896 82.576,172.701 "/>
+<line fill="none" x1="79.17" x2="79.17" y1="225.127" y2="254.343" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"/>
+<polygon points="76.039,252.113 79.305,264.309 82.576,252.113 "/>
+<text enable-background="new    " transform="matrix(1 0 0 1 29.4263 359.9902)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">Compile and Elaborate</tspan><tspan x="24.735" font-size="10" y="12" font-family="'Helvetica'">Using xelab</tspan></text>
+<path fill="none" d="M158.838,371.952c0,6.627-5.371,12-12,12H12.5  c-6.627,0-12-5.373-12-12v-16.229c0-6.628,5.373-12,12-12h134.338c6.629,0,12,5.372,12,12V371.952z" stroke-miterlimit="10" stroke="#000000"/>
+<line fill="none" x1="79.17" x2="79.17" y1="304.54" y2="333.756" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"/>
+<polygon points="76.039,331.526 79.305,343.722 82.576,331.526 "/>
+<line fill="none" x1="79.17" x2="79.17" y1="383.951" y2="413.166" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"/>
+<polygon points="76.039,410.936 79.305,423.133 82.576,410.936 "/>
+<text enable-background="new    " transform="matrix(1 0 0 1 36.1011 519.3242)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">Debug in Waveform</tspan><tspan x="-19.455" font-size="10" y="12" font-family="'Helvetica'">Or Self-checking Test Bench</tspan></text>
+<path fill="none" d="M158.838,530.775c0,6.627-5.371,12-12,12H12.5  c-6.627,0-12-5.373-12-12v-16.23c0-6.629,5.373-12,12-12h134.338c6.629,0,12,5.371,12,12V530.775z" stroke-miterlimit="10" stroke="#000000"/>
+<line fill="none" x1="79.17" x2="79.17" y1="463.363" y2="492.578" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"/>
+<polygon points="76.039,490.348 79.305,502.545 82.576,490.348 "/>
+<text font-size="5" font-family="'Helvetica'" transform="matrix(1 0 0 1 266.5215 561.0508)">X12985</text>
+<rect width="159.338" fill="none" height="40.231" stroke-miterlimit="10" y="184.896" stroke="#000000"/>
+<g>
+	<g>
+		<polyline fill="none" stroke-miterlimit="10" stroke-width="0.5" points="159.838,125.601 235.544,125.601     235.544,141.286   " stroke="#000000"/>
+		<g>
+			<polygon points="234.152,140.295 235.604,145.716 237.058,140.295    "/>
+		</g>
+	</g>
+</g>
+<rect x="183.338" y="144.759" fill="none" width="105.539" height="29.039" stroke="#000000" stroke-miterlimit="10"/>
+<text transform="matrix(1 0 0 1 187.4883 156.7783)"><tspan x="0" font-size="10" y="0" font-family="'Helvetica'">For Timing Simulation</tspan><tspan x="28.614" font-size="10" y="12" font-family="'Helvetica'">write_sdf</tspan></text>
+<g>
+	<g>
+		<polyline fill="none" stroke-miterlimit="10" stroke-width="0.5" points="183.338,159.278 172.377,159.278     172.377,205.012 164.268,205.012   " stroke="#000000"/>
+		<g>
+			<polygon points="165.258,203.62 159.838,205.072 165.258,206.525    "/>
+		</g>
+	</g>
+</g>
+</svg>

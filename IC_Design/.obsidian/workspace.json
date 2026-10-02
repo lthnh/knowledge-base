@@ -265,12 +265,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-09-27.md",
-                "mode": "source",
+                "file": "Digital_Design_On_FPGA/Tcl_scripting/Vivado_Specific.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-27"
+              "title": "Vivado_Specific"
             }
           }
         ],
@@ -441,6 +441,11 @@
   },
   "active": "8af3c9bccdc39906",
   "lastOpenFiles": [
+    "Digital_Design_On_FPGA/Tcl_scripting/Variable_Scope.md",
+    "Digital_Design_On_FPGA/Tcl_scripting/Proc.md",
+    "Digital_Design_On_FPGA/Tcl_scripting/Vivado_Specific.md",
+    "Digital_Design_On_FPGA/Images/post-synthesis-and-post-implementation-simulations-flow.svg",
+    "Digital_Design_On_FPGA/Images",
     "Digital_Design_On_FPGA/Study_Notes/2026-09-13.md",
     "2026-09-27.md",
     "Untitled.md",
@@ -464,9 +469,6 @@
     "Advanced_Circuit_Analysis/Notes/1_Semiconductors_Theory/pn_Junction_(Open-Circuit).md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Zener_Diodes.md",
     "Advanced_Circuit_Analysis/Notes/2_Diodes/Voltage_Regulation_using_Forward_Voltage_Drop.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/pn_Junction_Diode.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Modeling_the_Zener_Diode.md",
-    "Advanced_Circuit_Analysis/Notes/2_Diodes/Applications_of_Diode.md",
     "Physical Design Flow",
     "Digital_Design_On_FPGA/Study_Notes",
     "Digital_Design_On_FPGA",
@@ -480,13 +482,11 @@
     "Advanced_Circuit_Analysis/Images/generic-current-mirror.png",
     "Advanced_Circuit_Analysis/Notes/5_Transistor_Amplifiers",
     "Pasted image 20260819162832.png",
-    "Advanced_Circuit_Analysis/Notes/6_IC_Amplifiers",
     "Pasted image 20260530194105.png",
     "Untitled.canvas",
     "Advanced Digital IC Design/Images/photo-masking-w-negative-photoresist.png",
     "Advanced Circuit Analysis/Images/profiles-of-minority-carriers-concentrations.png",
     "Advanced Digital IC Design/Images/intrinsic-gate-capacitance.png",
-    "Pasted image 20260323192827.png",
-    "Advanced Digital IC Design/Images/three-types-of-diffusion.png"
+    "Pasted image 20260323192827.png"
   ]
 }
